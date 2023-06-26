@@ -1,7 +1,7 @@
 const assert = require("chai").assert;
-
+const multiply = require("../multiply");
 describe("multiply", function () {
-  it("First test", function () {
+  it("Mutiply function returns one", function () {
     assert.equal(multiply(1, 1), 1);
   });
 });
