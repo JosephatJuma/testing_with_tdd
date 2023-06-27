@@ -1,5 +1,6 @@
 const assert = require("chai").assert;
 const multiply = require("../multiply");
+const factorial = require("../factorial");
 describe("multiply", function () {
   it("1x1=1", function () {
     assert.equal(multiply(1, 1), 1);
@@ -15,5 +16,12 @@ describe("multiply", function () {
   });
   it("23x45=45x23", function () {
     assert.equal(multiply(23, 45), 23 * 45);
+  });
+});
+
+//Factorial testing
+describe("Factorial testing", function () {
+  it("5!=120", function () {
+    assert.equal(factorial(5), 120);
   });
 });
