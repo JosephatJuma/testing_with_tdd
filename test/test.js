@@ -38,4 +38,14 @@ describe("Factorial testing", function () {
   it("5!=120", function () {
     assert.equal(factorial(5), 120);
   });
+  it("6!=720", function () {
+    assert.equal(factorial(6), 720);
+  });
+});
+
+//testing fobinacci
+describe("fibomacci", function () {
+  it("fibonacci 0=0", function () {
+    assert.equal(fibonacci(0), "123");
+  });
 });
