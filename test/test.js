@@ -1,8 +1,7 @@
 const assert = require("chai").assert;
-const multiply = require("../multiply");
-const factorial = require("../factorial");
 
 //Multiply testing
+const multiply = require("../multiply");
 describe("multiply", function () {
   it("1x1=1", function () {
     assert.equal(multiply(1, 1), 1);
@@ -22,6 +21,7 @@ describe("multiply", function () {
 });
 
 //Factorial testing
+const factorial = require("../factorial");
 describe("Factorial testing", function () {
   it("1!=1", function () {
     assert.equal(factorial(1), 1);
@@ -44,8 +44,10 @@ describe("Factorial testing", function () {
 });
 
 //testing fobinacci
-describe("fibomacci", function () {
-  it("fibonacci 0=0", function () {
-    assert.equal(fibonacci(0), "123");
+
+const fibonacci = require("../fibonacci");
+describe("fibonacci", function () {
+  it("fibonacci 2 is equal 1", function () {
+    assert.equal(fibonacci(2), 1);
   });
 });
