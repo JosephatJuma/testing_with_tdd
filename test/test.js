@@ -59,4 +59,7 @@ describe("fibonacci", function () {
   it("fibonacci 10 is equal 55", function () {
     assert.equal(fibonacci(10), 55);
   });
+  it("fibonacci 20 is equal 6765", function () {
+    assert.equal(fibonacci(20), 6765);
+  });
 });
